@@ -263,15 +263,14 @@ body {
 .schrift-mobile-container {
 
   position: absolute;
-
-  height: 30vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 100vh;
   width: 90%;
 
   max-width: 100%;
   display: flex;
   justify-content: center;
-  align-items:flex-end;
-  bottom: 150px;
   
   border: cornflowerblue 2px solid;
 }
