@@ -34,6 +34,7 @@ body {
   display: flex;
 
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   background-size: 100% !important;
   background-repeat: no-repeat !important;
@@ -260,10 +261,10 @@ body {
 }
 
 .schrift-mobile-container {
+
   position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-  height: 40vh;
+
+  height: 30vh;
   width: 90%;
 
   max-width: 100%;
@@ -271,7 +272,7 @@ body {
   justify-content: center;
   align-items:flex-end;
   bottom: 150px;
-  padding: 0;
+  
   border: #a62f3b 2px solid;
 }
 
@@ -461,7 +462,7 @@ body {
   width: 80vw;
 
   align-self: center;
-  margin-top: 135vh;
+  margin-top: 130vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -475,8 +476,8 @@ body {
   height: 75vh;
   width: 80vw;
 
-  
-  margin-top: 135vh;
+  align-self: center;
+  margin-top: 130vh;
   display: flex;
   align-items: center;
   justify-content: center;
