@@ -210,23 +210,7 @@ body {
   transform: rotateZ(90deg);
 }
 
-/* @media (max-width: 1300px) {
-  .hamburger-container {
-    top: -2%;
-  }
-} */
 
-/* @media (max-height: 750px) {
-  .hamburger-container {
-    top: -4%;
-  }
-}
-
-@media (min-height: 1070px) {
-  .hamburger-container {
-    top: -0.5%;
-  }
-} */
 
 .schrift-container {
   position: absolute;
@@ -489,18 +473,19 @@ body {
 }
 
 .beschreibung-mobile-container{
-  position: absolute;
+  position: relative;
+  top: -20vh;
+
   height: 75vh;
   width: 80vw;
-
   align-self: center;
-  margin-top: 130vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: column;
-  visibility: hidden;
+  display: none;
+  
 }
 
 .beschreibung{
@@ -515,38 +500,29 @@ body {
  .beschreibung_mobile{
  width: calc(200px + 10vw) ;  
  padding-bottom: 4vh;
+ overflow: hidden;
+ object-fit: contain;
  }
 
 .bio_mobile{
   
   width: calc(180px + 10vw);
-  
+  overflow: hidden;
+  object-fit: contain;
 }
 
 
 
-/* .beschreibung_mobile_hoch{
-  position: absolute;
-  width: 80%;
-  display: none;
-  top: 20vmin;
-}
 
-.bio_mobile_hoch{
-  position: absolute;
-  width: 75%;
-  display: none;
-  top: 90vmin;
-} */
 
-@media (max-width: 1230px) {
+@media (max-width: 800px) {
  .beschreibung-mobile-container {
-    visibility: visible;
+   display: flex;
   }
 }
 
 
-@media (max-width: 1230px) {
+@media (max-width: 800px) {
   .beschreibung,
   .bio {
     display: none;
