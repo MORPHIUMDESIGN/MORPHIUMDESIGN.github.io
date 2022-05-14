@@ -274,18 +274,20 @@ body {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  height: 100vh;
+  height: 40vh;
   width: 90%;
 
   max-width: 100%;
   display: flex;
   justify-content: center;
-  bottom: -9vh;
+  align-items:flex-end;
+  bottom: 150px;
   padding: 0;
+  
 }
 
 .schrift-mobile {
-  width: calc(5vw);
+  height: 90%;
   object-fit: contain;
   display: none;
   padding: 0;
@@ -293,7 +295,7 @@ body {
 
 @media (max-width: 445px) {
   .schrift-mobile {
-    display: block;
+    display: flex;
   }
 
   .schrift1 {
@@ -303,7 +305,7 @@ body {
 
 .menu-container {
   position: absolute;
-  height: calc(25vh - 5vw);
+  height: 15vh;
   width: 60vw;
   top: 15vh;
   left: 50%;
@@ -326,12 +328,18 @@ body {
 
 @media (max-height: 800px) {
   .menu-container{
-    height: calc(20vh - 5vw);
-    top: 18vh;
+    
+    top: 17vh;
 
   }
 }
+@media (max-height: 700px) {
+  .menu-container{
+    
+    top: 19vh;
 
+  }
+}
 .designs {
   cursor: pointer;
   font-size: 190%;
@@ -386,7 +394,7 @@ body {
 .kontakt:hover,
 .überuns:hover { transform: scale(1.1); }
 
-@media (max-width: 445px) {
+@media (max-width: 1300px) {
   .kontakt,
   .überuns,
   .designs {
