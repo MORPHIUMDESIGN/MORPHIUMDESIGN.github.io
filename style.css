@@ -500,7 +500,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
-  display: none;
+  visibility: hidden;
 }
 
 .beschreibung{
@@ -541,7 +541,7 @@ body {
 
 @media (max-width: 1230px) {
  .beschreibung-mobile-container {
-    display: flex;
+    visibility: visible;
   }
 }
 
