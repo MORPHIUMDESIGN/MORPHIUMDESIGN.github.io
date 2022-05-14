@@ -129,11 +129,18 @@ body {
   max-width: 100%;
   display: flex;
   justify-content: center;
+  
 }
 
 .logo {
   width: calc(110px + 7vw);
   object-fit: contain;
+}
+
+@media (max-height: 600px) {
+  .logo{
+    width: calc(23vh);
+  }
 }
 
 .lücke-container {
@@ -264,20 +271,21 @@ body {
 
   position: absolute;
  
-  height: 100vh;
+  
   width: 90%;
-  height: 50vh;
+  height: 40%;
 
   max-width: 100%;
   display: flex;
   justify-content: center;
-  transform: translate(0, -80%);
+  align-items: baseline;
+  transform: translate(0, -40vh);
   border: cornflowerblue 2px solid;
 }
 
 .schrift-mobile {
-  height: 80%;
-  object-fit: contain;
+  height: calc(80%);
+  
   display: none;
   padding: 0;
 }
@@ -387,7 +395,7 @@ body {
   .kontakt,
   .überuns,
   .designs {
-    font-size: 120%;
+    font-size: 100%;
   }
 }
 
