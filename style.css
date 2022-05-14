@@ -281,12 +281,14 @@ body {
   display: flex;
   justify-content: center;
   bottom: -9vh;
+  padding: 0;
 }
 
 .schrift-mobile {
   width: calc(5vw);
   object-fit: contain;
   display: none;
+  padding: 0;
 }
 
 @media (max-width: 445px) {
