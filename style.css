@@ -283,7 +283,7 @@ body {
   align-items:flex-end;
   bottom: 150px;
   padding: 0;
-  
+  border: #a62f3b 2px solid;
 }
 
 .schrift-mobile {
