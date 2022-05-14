@@ -474,9 +474,9 @@ body {
 
 .beschreibung-mobile-container{
   position: relative;
-  top: -20vh;
+  bottom: 15vh;
 
-  height: 75vh;
+  height: 100%;
   width: 80vw;
   align-self: center;
   display: flex;
@@ -529,7 +529,7 @@ body {
   }
 }
 
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
 
   .beschreibung_mobile{
     width: calc(120px + 25vw);
@@ -538,7 +538,7 @@ body {
   .bio_mobile{
     width: calc(110px + 25vw);
   }
-}
+} */
 
 
 
