@@ -88,7 +88,7 @@ body {
   height: 89%;
   width: 95%;
   padding: calc(0.2vw + 11px);
-  top: 55px;
+  top: calc(1.5vw + 1.5vh);
   
   margin: 0 auto;
 }
@@ -170,14 +170,16 @@ body {
   top: 0%;
   left: 50%;
   transform: translate(-50%, 0);
-  height: 150px;
+  height: 130px;
   width: 150px;
 
   max-width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   z-index: 2;
+  top: calc(1.3vw + 1.3vh)
+  
 }
 
 @keyframes grauton {
@@ -398,6 +400,15 @@ body {
     font-size: 100%;
   }
 }
+
+@media (max-width: 600px) {
+  .kontakt,
+  .überuns,
+  .designs {
+    font-size: 80%;
+  }
+}
+
 
 .footer {
   height: 25vh;
