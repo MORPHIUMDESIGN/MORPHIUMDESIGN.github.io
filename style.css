@@ -475,9 +475,9 @@ body {
   height: 75vh;
   width: 80vw;
 
-  align-self: center;
+  
   margin-top: 135vh;
-  display:grid;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
