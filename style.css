@@ -13,19 +13,6 @@
 
 
 
-#button {
-  height: 20vh;
-  width: 20vw;
-  cursor: pointer;
-  z-index: 9999;
-  background-color: #a62f3b;
-}
-
-#myDiv {
-  height:100px;
-  background:blue;
-}
-
 
 
 
@@ -37,6 +24,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: webkit-fill-available;
 }
 
 .allescontainer {
@@ -51,6 +39,7 @@ body {
   background-repeat: no-repeat !important;
   background-position: center !important;
   background-color: #fff7e4;
+  height: webkit-fill-available;
   
 }
 
@@ -472,7 +461,7 @@ body {
   width: 80vw;
 
   align-self: center;
-  margin-top: 125vh;
+  margin-top: 135vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -487,7 +476,7 @@ body {
   width: 80vw;
 
   align-self: center;
-  margin-top: 125vh;
+  margin-top: 135vh;
   display:grid;
   align-items: center;
   justify-content: center;
