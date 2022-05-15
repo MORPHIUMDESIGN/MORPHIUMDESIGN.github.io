@@ -122,23 +122,31 @@ body {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  height: 100vh;
+  height: 50vh;
   width: 90%;
 
   max-width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  overflow: hidden;
   
 }
 
 .logo {
-  width: calc(110px + 7vw);
+  height: 100%;
   object-fit: contain;
 }
 
-@media (max-height: 600px) {
+@media (max-width: 900px) {
   .logo{
-    width: calc(23vh);
+    height: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo{
+    height: 70%;
   }
 }
 
@@ -177,7 +185,8 @@ body {
   justify-content: center;
   align-items: baseline;
   z-index: 2;
-  top: calc(1.3vw + 1.3vh)
+  top: calc(1.3vw + 1.3vh);
+  overflow: hidden;
   
 }
 
@@ -216,40 +225,64 @@ body {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  height: 100vh;
+  height: 50vh;
   width: 90%;
 
   max-width: 100%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding-bottom: calc(300px + 15vw);
+  justify-content: baseline;
+  overflow: visible;
+  
 }
 
 .schrift2-container {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  height: 100vh;
+  height: 50vh;
   width: 90%;
 
   max-width: 100%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding-top: calc(300px + 15vw);
+  justify-content: flex-end;
+  overflow: visible;
+ 
 }
 
 .schrift1 {
-  width: calc(120px + 6vw);
+  position: relative;
+  height: 13%;
+  top: -15%;
+  
   object-fit: contain;
 }
 
 .schrift2 {
-  width: calc(120px + 6vw);
+  position: relative;
+  height: 13%;
+  bottom: -15%;
+  
   object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .schrift1
+  {
+    height: 11%;
+    top: -3%;
+  }
+}
+
+@media (max-width: 900px) {
+  .schrift2
+  {
+    height: 11%;
+    bottom: -3%;
+  }
 }
 
 .schrift-mobile-container {
@@ -273,6 +306,24 @@ body {
   
   display: none;
   padding: 0;
+}
+
+
+
+@media (max-width: 600px) {
+  .schrift1
+  {
+    height: 10%;
+    top: -2%;
+  }
+}
+
+@media (max-width: 600px) {
+  .schrift2
+  {
+    height: 10%;
+    bottom: -2%;
+  }
 }
 
 @media (max-width: 445px) {
@@ -306,6 +357,7 @@ body {
   opacity: 0;
   transition: opacity 0.5s ease-in;
   padding: calc(0.2vw + 11px);
+  overflow: hidden;
 }
 
 @media (max-height: 800px) {
@@ -334,6 +386,7 @@ body {
   padding-left: 4vw;
   text-decoration: none;
   transition: all .1s ease-in-out;
+  overflow: hidden;
 }
 
 
@@ -351,11 +404,13 @@ body {
   padding-left: 2vw;
   text-decoration: none;
   transition: all .1s ease-in-out;
+  overflow: hidden;
   
 }
 
 .kontaktlink{
   text-decoration: none;
+  overflow: hidden;
 }
 
 .überuns {
@@ -370,6 +425,7 @@ body {
   padding-left: 2vw;
   text-decoration: none;
   transition: all .1s ease-in-out;
+  overflow: hidden;
 }
 
 .designs:hover,
@@ -406,8 +462,22 @@ body {
   background-repeat: no-repeat !important;
   background-position: center !important;
   background-color:#e6dcc7;
-  
-  
+  overflow:hidden
+}
+
+.kontaktgram{
+  height: 10vh;
+  overflow: hidden;
+}
+
+.instagram{
+  height: 10vh;
+  overflow: hidden;
+}
+
+.behance{
+  height: 10vh;
+  overflow: hidden;
 }
 
 .kontakticon {
@@ -415,6 +485,7 @@ body {
   margin: 2vh;
   cursor: pointer;
   transition: all .2s ease-in-out;
+  overflow: hidden;
 }
 
 
@@ -424,6 +495,7 @@ body {
   margin: 2vh;
   cursor: pointer;
   transition: all .2s ease-in-out;
+  overflow: hidden;
 }
 
 .behanceicon {
@@ -431,6 +503,7 @@ body {
   margin: 2vh;
   cursor: pointer;
   transition: all .1s ease-in-out;
+  overflow: hidden;
 }
 
 .kontakticon:hover,
@@ -467,7 +540,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: column;
   
 }
@@ -506,7 +579,7 @@ body {
 
 .bio_mobile{
   
-  width: calc(180px + 10vw);
+  width: calc(180px + 9vw);
   overflow: hidden;
   object-fit: contain;
 }
