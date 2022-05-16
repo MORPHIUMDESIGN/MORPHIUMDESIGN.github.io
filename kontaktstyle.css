@@ -147,6 +147,11 @@ body {
   transform: rotateZ(90deg);
 }
 
+.homepagelink{
+  overflow: hidden;
+  
+}
+
 /* @media (max-width: 1300px) {
   .hamburger-container,
   .rahmenhalter {
