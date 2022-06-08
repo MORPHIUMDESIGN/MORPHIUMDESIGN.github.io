@@ -813,12 +813,14 @@ z-index: 4;
   font-family: OF;
   font-size: 100%;
   letter-spacing: 10px;
+  text-align: center;
 }
 .rs1{
   
   font-family: OF;
   font-size: 100%;
   letter-spacing: 10px;
+  text-align: center;
 }
 
 .t1{
@@ -843,6 +845,7 @@ z-index: 4;
   transition: 0.2s ease-in;
   opacity: 1;
   color: #000000;
+  text-align: center;
 }
 
 .bild1{
@@ -879,9 +882,27 @@ z-index: 4;
     "r1 r1 r1";
     height: 100vw;
   }
-  .ms1{
+  .ms1,
+  .ls1,
+  .rs1 {
     font-size: 100%;
   }
 } 
 
+@media (max-width: 600px) {
+  .ms1,
+  .ls1,
+  .rs1 {
+    font-size: 80%;
 
+  }
+}
+
+@media (max-width: 350px) {
+  .ms1,
+  .ls1,
+  .rs1 {
+    font-size: 60%;
+
+  }
+}
