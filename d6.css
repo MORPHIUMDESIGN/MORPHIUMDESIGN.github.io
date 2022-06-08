@@ -184,7 +184,7 @@
   } */
   
   .schrift-container {
-    margin-top: 10vh;
+    margin-top: 110px;
 
     
     
@@ -200,7 +200,7 @@
     top: 20vh;
     text-align: center;
     pointer-events: none;
-    
+    overflow: visible;
 
   
   
