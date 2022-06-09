@@ -228,7 +228,7 @@ body {
   animation-iteration-count: infinite;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
-  animation: fadeIn 3s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .hamburger:hover {
@@ -276,7 +276,7 @@ body {
   
   object-fit: contain;
   
-  animation: fadeIn 3s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
   
 }
 
@@ -903,6 +903,15 @@ z-index: 4;
   .ls1,
   .rs1 {
     font-size: 60%;
+
+  }
+}
+
+@media (max-height: 650px) {
+  .ms1,
+  .ls1,
+  .rs1 {
+    font-size: 80%;
 
   }
 }
