@@ -50,7 +50,7 @@ body {
 
 
 .anker {
-  height: 750vh;
+  height: 950vh;
   width: 100vw;
 
   display: flex;
@@ -66,9 +66,9 @@ body {
   
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .anker {
-    height: 400vh;
+    height: 500vh;
   }
 }
 

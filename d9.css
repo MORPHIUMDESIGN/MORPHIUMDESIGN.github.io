@@ -23,7 +23,7 @@
   }
   
   .allescontainer {
-    height:300vh;
+    height:350vh;
     width: 100vw;
   
     display: flex;
@@ -39,7 +39,7 @@
 
   @media (max-width: 1000px) {
     .allescontainer{
-      height: 200vh;
+      height: 250vh;
     }
   }
   
@@ -422,7 +422,7 @@
   
   .designundbeschreibung-container {
     display: flex;
-    height: 600vh;
+    height: 500vh;
     width: 100vw;
 
     flex-direction: column;
@@ -454,7 +454,7 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    height:100%;
+    height: 100%;
     width: 50%;
     
 
@@ -509,7 +509,7 @@
 
   }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .beschreibung-container,
   .design-container {
     width: 80%;
