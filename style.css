@@ -30,6 +30,34 @@ body {
   
 }
 
+.videoloader{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #101010;
+  z-index: 9999999;
+  overflow: hidden;
+  
+  
+  animation: fadeOut 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 7s;
+  pointer-events: none;
+}
+
+.intro{
+ 
+  height: 50%;
+  animation: fadeOut 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 5.5s;
+  pointer-events: none;
+}
+
 .allescontainer {
   height: 200vh;
   width: 100vw;
@@ -752,6 +780,17 @@ body {
   }
   to {
     opacity: 1;
+  }
+
+}
+
+@keyframes fadeOut {
+  
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 
 }
